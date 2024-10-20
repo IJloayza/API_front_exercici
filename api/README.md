@@ -70,3 +70,8 @@ DELETE /alumne/delete/numericId
 
     Returns the alumne who has been deleted in order to know what have you deleted and avoid the user error in case of incorrect alumne deleted
 
+#View in page
+
+    ![LlistaInWeb](projectScreenshots\LlistaInWeb.png)
+
+    Here we have a view of the representation of the data found in database alumne using javascript to fetch and locate every row in the correspondent place of the table
