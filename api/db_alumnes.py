@@ -191,7 +191,7 @@ def checkAlumneInAula(descAula,nomAlumne):
         cur = conn.cursor()
         query = "SELECT COUNT(*) as id FROM Alumne JOIN Aula ON (Alumne.IdAula=Aula.IdAula) WHERE Aula.DescAula= %s AND Alumne.NomAlumne= %s;"
         cur.execute(query,(descAula,nomAlumne))
-        aula = cur.fetchone()
+        cuantos = cur.fetchone()
         conn.commit()
     except Exception as e:
         return {"status": -1, "message": f"Error de connexió:{e}" }
@@ -199,4 +199,4 @@ def checkAlumneInAula(descAula,nomAlumne):
     finally:
         conn.close()
         
-    return aula
+    return cuantos
