@@ -14,7 +14,7 @@ uvicorn main:app --reload
 GET /alumnes/list
 Optional uses:
 
-    ![AlumnesList](projectScreenshots\alumnesLlist.png)
+    ![AlumnesList](alumnesLlist.png)
 
     When there is no optional items find in the order returns all the list of alumnes without any information about the aula except for DescAula 
 
